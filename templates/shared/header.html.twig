@@ -1,0 +1,40 @@
+<header class="bg-gray-800 text-white shadow-md">
+    <div class="container mx-auto flex items-center justify-between p-4">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="{{ asset('images/logo.jpg') }}" alt="Logo" class="h-10 w-14">
+            <span class="ml-3 text-xl font-bold">Event_Bénin</span>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="hidden md:flex space-x-6">
+            <a href="#" class="hover:text-gray-400">Accueil</a>
+            <a href="#" class="hover:text-gray-400">Événements</a>
+            <a href="#" class="hover:text-gray-400">Catégories</a>
+            <a href="#" class="hover:text-gray-400">Contact</a>
+        </nav>
+
+        <!-- CTA Button -->
+        <div class="hidden md:flex">
+            <a href="#" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Se connecter/S'inscrire</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+        <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Accueil</a>
+        <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Événements</a>
+        <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Catégories</a>
+        <a href="#" class="block px-4 py-2 text-sm hover:bg-gray-700">Connexion/Inscription</a>
+        <a href="#" class="block px-4 py-2 mt-2 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded">Créer un événement</a>
+    </div>
+</header>

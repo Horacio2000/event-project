@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %} 
+
+{% block title %} Bienvenu sur notre espace {% endblock %}
+
+{% block body %}  
+
+<section class="bg-cover bg-center text-red-500 py-20">
+    <div class="container mx-auto text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4">Découvrez les Événements au Bénin</h1>
+        <p class="text-lg md:text-xl mb-8">Explorez la richesse culturelle et les événements passionnants du Bénin.</p>
+        <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-lg shadow-lg inline-block transition duration-300">Découvrir les Événements</a>
+    </div>
+</section>
+<section class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Catégories d'Événements</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="p-4 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Musique</h3>
+                <img src="{{ asset('images/img-1.jfif') }}" alt="Musique" class="">
+                <p class="mt-2">Découvrez les concerts et festivals de musique au Bénin.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Festival</h3>
+                <img src="{{ asset('images/img-2.jfif') }}" alt="Culture" class="">
+                <p class="mt-2">Explorez les événements culturels et traditions du Bénin.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Concert</h3>
+                <img src="{{ asset('images/img-3.jfif') }}" alt="Culture" class="">
+                <p class="mt-2">Explorez les événements sportifs au Bénin.</p>
+            </div>
+            <div class="p-4 bg-white rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-2">Chill</h3>
+                <img src="{{ asset('images/img-4.jfif') }}" alt="Culture" class="">
+                <p class="mt-2">Explorez les événements culturels et traditions du Bénin.</p>
+            </div>
+            <!-- Ajouter d'autres catégories ici -->
+        </div>
+    </div>
+</section>
+<section class="py-16">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Événements Populaires</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="{{ asset('images/img-1.jfif') }}" alt="Événement 1" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Nom de l'Événement 1</h3>
+                    <p class="mb-2">Date: 10 Juillet 2024</p>
+                    <p>Description courte de l'événement.</p>
+                    <a href="#" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-lg inline-block transition duration-300">Voir Détails</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="{{ asset('images/img-1.jfif') }}" alt="Événement 2" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Nom de l'Événement 2</h3>
+                    <p class="mb-2">Date: 15 Août 2024</p>
+                    <p>Description courte de l'événement.</p>
+                    <a href="#" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-lg inline-block transition duration-300">Voir Détails</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="{{ asset('images/img-1.jfif') }}" alt="Événement 2" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-xl font-bold mb-2">Nom de l'Événement 3</h3>
+                    <p class="mb-2">Date: 15 Août 2024</p>
+                    <p>Description courte de l'événement.</p>
+                    <a href="#" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-lg inline-block transition duration-300">Voir Détails</a>
+                </div>
+            </div>
+            <!-- Ajouter d'autres événements recommandés ici -->
+        </div>
+    </div>
+</section>
+<section class="py-16 bg-gray-100">
+    <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">Créer un Événement</h2>
+        <p class="text-lg mb-8">Organisez votre propre événement et rejoignez notre communauté.</p>
+        <a href="#" class="bg-green-500 hover:bg-green-600 text-white py-3 px-8 rounded-lg shadow-lg inline-block transition duration-300">Créer un Événement</a>
+    </div>
+</section>
+
+{% endblock %}
